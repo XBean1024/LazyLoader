@@ -1,4 +1,4 @@
- setUserVisibleHint()相关技术点
+
 # 1 日志截图
 ![-w982](media/15646507433812.jpg)
 
@@ -126,7 +126,7 @@ public void setPrimaryItem(@NonNull ViewGroup container, int position, @NonNull 
 
 ![-w1103](media/15646552034506.jpg)
 
-* 白框部分：系统的调用时候，`this.mCurrentPrimaryItem`是初始值`null`，不会走。其他情况出发都会走。并且走白框的时候，就是发生切换的时候。
+* 白框部分：系统的调用时候，`this.mCurrentPrimaryItem`是初始值`null`，不会走。其他情况出发都会走。并且走白框的时候，就是发生切换的时候,切换是走进这个`if语句`的前提，当然是除了`系统第一次调用这个函数的时候`。
 * 红框部分：是的`this.mCurrentPrimaryItem`指向即将可见的`fragment`。
 
 
